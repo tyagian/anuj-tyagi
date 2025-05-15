@@ -3,7 +3,7 @@
 My name is Anuj Tyagi (he / him).
 
 * I'm a Senior site reliability engineer @RingCentral Inc
-* Community builder at [@AWS](https://aws.amazon.com/developer/community/community-builders) where I focus on ![AWS Web Services](https://raw.githubusercontent.com/ksatirli/ksatirli/main/assets/hashicorp-terraform.svg)
+* Community builder at [@AWS](https://aws.amazon.com/developer/community/community-builders) where I focus on [AWS Web Services](https://aws.amazon.com/) 
 * Top 1% Mentor @ [TopMate]([https://certdirectory.io/mentorship](https://topmate.io/anujtyagi/))
 * Mentor for Cloud Native [@CertDirectory](https://certdirectory.io/mentorship)
 
