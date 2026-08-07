@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open-source projects and innovation by Anuj Tyagi — Terraform providers, SentinelGuard, CNCF, and Apache contributions.">
+    <title>Projects - Anuj Tyagi | Senior Site Reliability Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Anuj Tyagi</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="hero-headline">Projects &amp; Open Source</h1>
+            <p class="hero-subheadline">Terraform providers, LLM guardrails, CNCF contributions, and Apache CDN tooling used across Fortune 500 organizations.</p>
+            <p class="hero-authority">GitHub: github.com/tyagian · CNCF: contribcard.cncf.io/tyagian</p>
+        </div>
+    </section>
+
+    <section class="focus-areas-strip">
+        <div class="container">
+            <p class="focus-areas-label">Focus Areas</p>
+            <ul class="focus-areas-list">
+                <li>Infrastructure as Code &amp; Provider Development</li>
+                <li>LLM Guardrails &amp; AI Safety</li>
+                <li>Cloud-Native Observability &amp; GitOps</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section github-section">
+        <div class="container">
+            <div class="github-link-card">
+                <div class="github-icon">
+                    <svg height="32" width="32" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                </div>
+                <div class="github-content">
+                    <h3>View All Repositories on GitHub</h3>
+                    <p>Explore open-source projects, CNCF contributions, and experiments.</p>
+                    <a href="https://github.com/tyagian?tab=repositories" target="_blank" rel="noopener noreferrer" class="github-btn">
+                        github.com/tyagian →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects-page">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Selected open-source and innovation work.</p>
+
+            <div class="projects-list">
+                <article class="project-item">
+                    <div class="project-content">
+                        <h3 class="project-title">Terraform Provider for MongoDB Indexes</h3>
+                        <p class="project-repo">8,000+ downloads · registry.terraform.io/providers/megum1n/mongodb</p>
+                        <p class="project-description">
+                            First Terraform provider capable of managing all MongoDB and Amazon DocumentDB index types —
+                            a capability the official MongoDB provider still lacks. MongoDB’s Senior Product Manager
+                            proactively contacted me to learn from the approach. Also available as an OpenTofu provider.
+                        </p>
+                        <div class="project-tags">
+                            <span>Terraform</span>
+                            <span>OpenTofu</span>
+                            <span>MongoDB</span>
+                            <span>DocumentDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://registry.terraform.io/providers/megum1n/mongodb" target="_blank" rel="noopener noreferrer" class="project-link">Terraform Registry →</a>
+                            <a href="https://search.opentofu.org/provider/megum1n/mongodb" target="_blank" rel="noopener noreferrer" class="project-link">OpenTofu →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-content">
+                        <h3 class="project-title">SentinelGuard — LLM Guardrails</h3>
+                        <p class="project-repo">40,000+ downloads · pypi.org/project/sentinelguard</p>
+                        <p class="project-description">
+                            LLM guardrails framework for securing AI applications, co-authored and published on PyPI.
+                            Provides production-ready safety controls for large language model deployments.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>LLM</span>
+                            <span>AI Safety</span>
+                            <span>PyPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pypi.org/project/sentinelguard" target="_blank" rel="noopener noreferrer" class="project-link">PyPI →</a>
+                            <a href="https://pypistats.org/packages/sentinelguard" target="_blank" rel="noopener noreferrer" class="project-link">Download Stats →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-content">
+                        <h3 class="project-title">CNCF — Flagger &amp; Prometheus Ecosystem</h3>
+                        <p class="project-repo">100M+ downloads · contribcard.cncf.io/tyagian</p>
+                        <p class="project-description">
+                            Identified and fixed a critical configuration observability gap in Flagger, accepted by the
+                            project creator. Resolved an AWS Lambda@Edge monitoring limitation in the Prometheus YACE
+                            exporter that the project maintainer could not fix — accepted into the official repository.
+                        </p>
+                        <div class="project-tags">
+                            <span>CNCF</span>
+                            <span>Flagger</span>
+                            <span>Prometheus</span>
+                            <span>YACE</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://contribcard.cncf.io/tyagian" target="_blank" rel="noopener noreferrer" class="project-link">CNCF Contrib Card →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-content">
+                        <h3 class="project-title">Apache Traffic Control</h3>
+                        <p class="project-repo">github.com/apache/trafficcontrol</p>
+                        <p class="project-description">
+                            Multiple merged pull requests contributing API enhancements and Python client library upgrades
+                            to the open-source CDN platform used by Comcast, Disney Streaming, Amazon Prime,
+                            Cox Communications, and Cisco.
+                        </p>
+                        <div class="project-tags">
+                            <span>Apache</span>
+                            <span>CDN</span>
+                            <span>Python</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/apache/trafficcontrol" target="_blank" rel="noopener noreferrer" class="project-link">View Repository →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-content">
+                        <h3 class="project-title">Grafana Dashboard — MCP Server Observability</h3>
+                        <p class="project-repo">grafana.com/grafana/dashboards/25252</p>
+                        <p class="project-description">
+                            Published Grafana dashboard for monitoring Model Context Protocol (MCP) server observability.
+                        </p>
+                        <div class="project-tags">
+                            <span>Grafana</span>
+                            <span>MCP</span>
+                            <span>Observability</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://grafana.com/grafana/dashboards/25252" target="_blank" rel="noopener noreferrer" class="project-link">View Dashboard →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Anuj Tyagi. All rights reserved.</p>
+            <p class="footer-note">Built with HTML, CSS &amp; JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
