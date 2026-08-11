@@ -1,30 +1,30 @@
-/* CSS Variables */
-:root {
+/* CSS Variables — dark theme by default */
+:root,
+[data-theme="dark"] {
     --primary-color: #3b82f6;
     --secondary-color: #2563eb;
     --accent-color: #60a5fa;
-    --text-primary: #1f2937;
-    --text-secondary: #6b7280;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
     --text-light: #9ca3af;
-    --background: #ffffff;
-    --background-alt: #fafafa;
-    --border-color: #e5e7eb;
+    --background: #111827;
+    --background-alt: #1f2937;
+    --border-color: #374151;
+    --navbar-bg: rgba(17, 24, 39, 0.95);
     --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --transition: all 0.2s ease;
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-primary: #f9fafb;
-        --text-secondary: #d1d5db;
-        --text-light: #9ca3af;
-        --background: #111827;
-        --background-alt: #1f2937;
-        --border-color: #374151;
-    }
+[data-theme="light"] {
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --text-light: #9ca3af;
+    --background: #ffffff;
+    --background-alt: #fafafa;
+    --border-color: #e5e7eb;
+    --navbar-bg: rgba(255, 255, 255, 0.95);
 }
 
 /* Reset & Base Styles */
@@ -59,17 +59,11 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: var(--navbar-bg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
     padding: 1.25rem 0;
-}
-
-@media (prefers-color-scheme: dark) {
-    .navbar {
-        background-color: rgba(17, 24, 39, 0.95);
-    }
 }
 
 .navbar .container {
@@ -83,6 +77,12 @@ body {
     font-weight: 700;
     color: var(--text-primary);
     letter-spacing: -0.02em;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
 }
 
 .nav-menu {
@@ -117,6 +117,40 @@ body {
 
 .nav-menu a:hover::after {
     width: 100%;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background: rgba(59, 130, 246, 0.08);
+}
+
+.theme-toggle .icon-sun,
+.theme-toggle .icon-moon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+    display: block;
+}
+
+[data-theme="light"] .theme-toggle .icon-moon {
+    display: block;
 }
 
 .nav-toggle {
