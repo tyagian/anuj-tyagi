@@ -1,6 +1,6 @@
 # Anuj Tyagi — Portfolio Website
 
-Personal portfolio site for [Anuj Tyagi](https://github.com/tyagian), Senior Site Reliability Engineer specializing in Cloud & AI Infrastructure.
+Personal portfolio site for [Anuj Tyagi](https://github.com/tyagian), Senior Lead Site Reliability Engineer specializing in Cloud & AI Infrastructure.
 
 ## Pages
 
